@@ -32,14 +32,14 @@ sys.path.insert(0, '../') // inserts the previous directory to path
 pip install --global-option=build_ext --global-option="-I/opt/homebrew/include/graphviz" --global-option="-L/opt/homebrew/Cellar/graphviz/2.46.1/lib/"  pygraphviz
 ````
 
-<b><font color="#E44138">Problem:</font></b> 
-<b><font color="#6ED7D9">Solution:</font></b> 
+<b><font color="#E44138">Problem:</font></b>  module 'collections' has no attribute 'MutableSequence'
+<b><font color="#6ED7D9">Solution:</font></b> `collections.MutableSequence = collections.abc.MutableSequence`
 
-<b><font color="#E44138">Problem:</font></b> 
-<b><font color="#6ED7D9">Solution:</font></b> 
+<b><font color="#E44138">Problem:</font></b> module 'collections' has no attribute 'Mapping'
+<b><font color="#6ED7D9">Solution:</font></b> `collections.Mapping = collections.abc.Mapping`
 
-<b><font color="#E44138">Problem:</font></b> 
-<b><font color="#6ED7D9">Solution:</font></b> 
+<b><font color="#E44138">Problem:</font></b> 'str' object has no attribute 'decode'
+<b><font color="#6ED7D9">Solution:</font></b> remove .decode() -- it is depricated
 
 <b><font color="#E44138">Problem:</font></b> 
 <b><font color="#6ED7D9">Solution:</font></b> 
